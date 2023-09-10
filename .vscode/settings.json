@@ -1,5 +1,4 @@
 {
     "html-validate.enable": true,
-    "html.autoClosingTags": true,
-    "html.format.enable": false
+    "html.autoClosingTags": true
 }
