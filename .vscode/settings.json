@@ -1,4 +1,8 @@
 {
     "html-validate.enable": true,
-    "html.autoClosingTags": true
+    "html.autoClosingTags": true,
+    "cSpell.words": [
+        "Ayurvedic",
+        "Kapha"
+    ]
 }
