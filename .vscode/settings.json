@@ -1,13 +1,14 @@
 {
     "[html]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "NikolaosGeorgiou.html-fmt-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "html-validate.enable": true,
     "html.autoClosingTags": true,
     "cSpell.words": [
         "Ayurvedic",
-        "Kapha"
+        "Kapha",
+        "Mundi",
+        "Shroom"
     ],
     "files.enableTrash": false
 }

@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Heading -->
-    <head>
+
+    <!-- Head -->
+
+    <head id="website-head">
         <meta charset="UTF-8">
         <title>Kapha Crusher</title>
         <!-- CSS Styling -->
+        <!-- TODO FIND A USE FOR THE 'underline' ELEMENT. -->
         <style>
             /* Fonts */
             @import url('fonts/Montserrat-Regular.ttf' );
             .Montserrat { font-family: 'Montserrat', sans-serif; }
 
+            /* Text Sizes */
+            .small { font-size: 9.2px; margin: 0.3px !important; }
+            .medium { font-size: 11px; }
+
+            /* Custom Text Margin */
+            .top_margin { margin-top: 29px; }
+
             /* Text Styling */
-            .small { font-size: 10.1px; margin: 0.3px !important; }
-            .bold { font-style: bold !important; }
+            .bold { font-weight: bold !important; }
             .italic { font-style: italic !important; }
-            .underline { text-decoration: underline !important; }
+            /* .underline { text-decoration: underline !important; } */
         </style>
     </head>
+
     <!-- Body -->
-    <body class="Montserrat">
+
+    <body id="main-body" class="Montserrat">
         <!-- Title -->
-        <div id="title">
+        <section id="title">
             <h2>Kapha Crusher: Ayurvedic Ice Cream to Balance Your Earth and Fire Elements</h2>
-        </div>
+        </section>
         <!-- Image & Credits -->
-        <div id="image_and_credits">
-            <img
-                src="images/Kapha_Crusher.jpg"
-                alt="Kapha Crusher"
-                title="Kapha Crusher"
-                width="507"
-                height="507"
-            >
-            <p class="small italic underline">
+        <section id="image-credits">
+            <img src="images/Kapha_Crusher.jpg" alt="Kapha Crusher" title="Kapha Crusher" width="507" height="507">
+            <p class="small italic">
                 Credit: Sheri Wetherell &emsp;&emsp; May 17, 2022
             </p>
-        </div>
+        </section>
+        <!-- Ingredients -->
+        <section id="article-title" class="top_margin bold">
+            Ingredients
+        </section>
+        <article id="list-of-ingredients" class="medium">
+            <p>
+                &emsp;1.&emsp; <i>2 cups</i> of frozen cauliflower.
+                <br>
+                &emsp;2.&emsp;<i>One cup</i> of frozen blueberries.
+                <br>
+                &emsp;3.&emsp;<i>One scoop</i> of any good bone broth protein.
+                <br>
+                &emsp;4.&emsp;<i>One scoop</i> Anima Mundi Qi Energy Powder
+                <br>
+                &emsp;5.&emsp;<i>One scoop</i> Anima Mundi Shroom Mocha Milk
+                <br>
+                &emsp;6.&emsp;<i>Add &frac12; tsp</i> ginger, cinnamon, and
+                cardamom to spice it up and further reduce the Kapha
+                <br>
+                &emsp;7.&emsp;<i>2 cups</i> water, plus more if needed.
+                <br>
+                &emsp;8.&emsp;Blend in a blender until <i>smooth.</i>
+            </p>
+        </article>
     </body>
 </html>
