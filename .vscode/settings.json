@@ -1,5 +1,6 @@
 {
     "[html]": {
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "html-validate.enable": true,
