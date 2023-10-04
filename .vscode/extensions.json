@@ -16,8 +16,11 @@
         "streetsidesoftware.code-spell-checker",
         "voldemortensen.rainbow-tags",
         "firefox-devtools.vscode-firefox-debug",
-        "zignd.html-css-class-completion",
         "louiswt.regexp-preview",
-        "nikolaosgeorgiou.html-fmt-vscode"
+        "nikolaosgeorgiou.html-fmt-vscode",
+        "bradlc.vscode-tailwindcss",
+        "joy-yu.css-snippets",
+        "clinyong.vscode-css-modules",
+        "dzhavat.css-flexbox-cheatsheet"
     ]
 }
