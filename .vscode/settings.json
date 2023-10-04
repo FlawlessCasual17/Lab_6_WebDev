@@ -1,4 +1,7 @@
 {
+    "[html]": {
+        "editor.formatOnSave": true
+    },
     "html-validate.enable": true,
     "html.autoClosingTags": true,
     "cSpell.words": [
