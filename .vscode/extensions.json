@@ -17,6 +17,7 @@
         "voldemortensen.rainbow-tags",
         "firefox-devtools.vscode-firefox-debug",
         "zignd.html-css-class-completion",
-        "louiswt.regexp-preview"
+        "louiswt.regexp-preview",
+        "nikolaosgeorgiou.html-fmt-vscode"
     ]
 }

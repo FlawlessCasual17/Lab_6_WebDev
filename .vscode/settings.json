@@ -1,6 +1,7 @@
 {
     "[html]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "NikolaosGeorgiou.html-fmt-vscode"
     },
     "html-validate.enable": true,
     "html.autoClosingTags": true,
