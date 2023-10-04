@@ -192,9 +192,9 @@ TODO              text
 # *.zip             binary
 
 # Fonts
-# *.ttf             binary
+*.ttf             binary
 # *.eot             binary
-# *.otf             binary
+*.otf             binary
 # *.woff            binary
 # *.woff2           binary
 
