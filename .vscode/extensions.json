@@ -18,6 +18,7 @@
         "bradlc.vscode-tailwindcss",
         "joy-yu.css-snippets",
         "clinyong.vscode-css-modules",
-        "dzhavat.css-flexbox-cheatsheet"
+        "dzhavat.css-flexbox-cheatsheet",
+        "yandeu.five-server"
     ]
 }
