@@ -3,6 +3,11 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[svg]": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": false,
+        "editor.defaultFormatter": "jock.svg"
+    },
     "html-validate.enable": true,
     "html.autoClosingTags": true,
     "cSpell.words": [
