@@ -4,7 +4,6 @@
         "ms-vscode.live-server",
         "oderwat.indent-rainbow",
         "html-validate.vscode-html-validate",
-        "ecmel.vscode-html-css",
         "codezombiech.gitignore",
         "waderyan.gitblame",
         "formulahendry.auto-close-tag",
@@ -15,11 +14,13 @@
         "voldemortensen.rainbow-tags",
         "firefox-devtools.vscode-firefox-debug",
         "louiswt.regexp-preview",
-        "bradlc.vscode-tailwindcss",
         "joy-yu.css-snippets",
         "clinyong.vscode-css-modules",
-        "dzhavat.css-flexbox-cheatsheet",
         "yandeu.five-server",
-        "jock.svg"
+        "jock.svg",
+        "phoenisx.cssvar",
+        "pucelle.vscode-css-navigation",
+        "solnurkarim.html-to-css-autocompletion",
+        "ziloen.html-entities-converter"
     ]
 }

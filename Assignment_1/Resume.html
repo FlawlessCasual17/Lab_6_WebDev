@@ -12,6 +12,7 @@
         <style id="css_styling">
             /* Import fonts. */
             @import url('fonts/LiberationSerif-Regular.ttf');
+            @import url('fonts/SourceSerifPro-900.ttf');
 
             /* Overridden default CSS elements. */
             @page {
@@ -47,8 +48,30 @@
                 }
             }
 
+            .steelBlue {
+                font {
+                    color: #3465a4;
+                }
+            }
+
+            .cornFlowerBlue {
+                font {
+                    color: #729fcf;
+                }
+            }
+
+            .black {
+                font {
+                    color: #000000;
+                }
+            }
+
             .liberationSerif {
-                font-family: 'LiberationSerif-Regular', serif !important;
+                font-family: 'Liberation Serif', serif !important;
+            }
+
+            .sourceSerifPro_Black {
+                font-family: 'Source Serif Pro Black', sans-serif !important;
             }
 
             .fontSize2 {
@@ -57,6 +80,14 @@
 
             .fontSize_11pt {
                 font-size: 11pt;
+            }
+
+            .fontSize4 {
+                font-size: 4;
+            }
+
+            .fontSize_14pt {
+                font-size: 14pt;
             }
 
             .fontSize6 {
@@ -69,6 +100,10 @@
 
             .nLetterSpacing {
                 letter-spacing: -0.1pt;
+            }
+
+            .alignTextLeft {
+                text-align: left;
             }
 
             .style0 {
@@ -138,6 +173,29 @@
                 margin-top: 0in;
                 margin-bottom: 0in
             }
+
+            .style10 {
+                line-height: 0.18in;
+                margin-left: 1in;
+                margin-right: 5.68in;
+                margin-bottom: 0in
+            }
+
+            .style11 {
+                line-height: 0.27in;
+                margin-left: 1in;
+                margin-right: 6.85in;
+                margin-top: 0.9in;
+                margin-bottom: 0in
+            }
+
+            .style12 {
+                line-height: 0.18in;
+                margin-left: 1in;
+                margin-right: 1.06in;
+                margin-top: 0.17in;
+                margin-bottom: 0in
+            }
         </style>
     </head>
 
@@ -149,10 +207,8 @@
             <br>
         </p>
         <p class="style0">
-            <span class="style1"></span>
-            <span class="style2"></span>
-            <span class="style3"></span>
-            <span class="style4"></span>
+            <span class="style1"></span><span class="style2"></span>
+            <span class="style3"></span><span class="style4"></span>
             <br>
         </p>
         <!-- Fix deprecated elements later... -->
@@ -168,58 +224,23 @@
         <p class="style9 dimGray liberationSerif">
             <span class="fontSize2 fontSize_11pt nLetterSpacing">403 970 1655</span>
         </p>
-        <p style="line-height: 0.18in; margin-left: 1in; margin-right: 5.68in; margin-bottom: 0in">
-            <font color="#3465a4">
-                <font face="Liberation Serif">
-                    <font size="2" style="font-size: 11pt">
-                        <span style="letter-spacing: -0.1pt"><u>Kris37Schneider@vivaldi.net</u></span>
-                    </font>
-                </font>
-            </font>
+        <p class="style10 steelBlue liberationSerif">
+            <span class="fontSize2 fontSize_11pt nLetterSpacing">
+                <u>Kris37Schneider@vivaldi.net</u>
+            </span>
         </p>
-        <p style="line-height: 0.27in; margin-left: 1in; margin-right: 6.85in; margin-top: 0.9in; margin-bottom: 0in">
-            <font color="#729fcf">
-                <font face="Source Serif Pro Black">
-                    <font size="4" style="font-size: 14pt">
-                        <span style="letter-spacing: -0.1pt">SKILLS</span>
-                    </font>
-                </font>
-            </font>
+        <p class="style11 cornFlowerBlue sourceSerifPro_Black">
+            <span class="fontSize4 fontSize_14pt nLetterSpacing">SKILLS</span>
         </p>
-        <p align="left"
-            style="line-height: 0.18in; margin-left: 1in; margin-right: 1.06in; margin-top: 0.17in; margin-bottom: 0in">
-            <font color="#000000">
-                <font face="Liberation Serif">
-                    <font size="2" style="font-size: 11pt">
-                        <font color="#000000">
-                            <span style="letter-spacing: -0.1pt">
-                                I am punctual, hardworking, reliable, and diligent. I am kind and able
-                                to get along with all personalities. I am a team player.
-                            </span>
-                        </font>
-                    </font>
-                </font>
-            </font>
-            <font color="#000000">
-                <font face="Liberation Serif">
-                    <font size="2" style="font-size: 11pt">
-                        <font color="#000000">
-                            <span style="letter-spacing: -0.1pt">Also,</span>
-                        </font>
-                    </font>
-                </font>
-            </font>
-            <font color="#000000">
-                <font face="Liberation Serif">
-                    <font size="2" style="font-size: 11pt">
-                        <font color="#000000">
-                            <span style="letter-spacing: -0.1pt">
-                                I am diagnosed with ADHD and Aspersers (
-                            </span>
-                        </font>
-                    </font>
-                </font>
-            </font>
+        <p class="alignTextLeft style12 black liberationSerif">
+            <span class="fontSize2 fontSize_11pt nLetterSpacing">
+                I am punctual, hardworking, reliable, and diligent. I am kind and able
+                to get along with all personalities. I am a team player.
+            </span>
+            <span class="fontSize2 fontSize_11pt nLetterSpacing">Also,</span>
+            <span class="fontSize2 fontSize_11pt nLetterSpacing">
+                I am diagnosed with ADHD and Aspersers (
+            </span>
             <font color="#000000">
                 <font face="Liberation Serif">
                     <font size="2" style="font-size: 11pt">
