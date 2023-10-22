@@ -13,6 +13,7 @@
 
         <style>
             /* Import fonts. */
+            @import url('fonts/Montserrat-Regular.ttf');
             @import url('fonts/LiberationSerif-Regular.ttf');
             @import url('fonts/SourceSerifPro-900.ttf');
 
@@ -28,7 +29,7 @@
             }
 
             table {
-                width: 29%;
+                width: 30.1%;
                 height: 42pt
             }
 
@@ -39,7 +40,8 @@
             */
             #profile_pic {
                 position: absolute;
-                margin-left: 0.97in
+                margin-left: 5.46in;
+                margin-top: -3.77%;
             }
 
             /* Custom CSS class elements. */
@@ -61,6 +63,10 @@
 
             .black {
                 color: #000000 !important
+            }
+
+            .Montserrat {
+                font-family: 'Montserrat', sans-serif
             }
 
             .Liberation-Serif {
@@ -95,8 +101,8 @@
                 font-size: 14pt
             }
 
-            .fontSize-30pt {
-                font-size: 30pt
+            .titleFontSize {
+                font-size: 24.5pt
             }
 
             .nLetterSpacing {
@@ -217,9 +223,9 @@
 
     <body>
         <!-- Head Bar -->
-        <div id="head_bar">
+        <div id="blue_bar">
             <p class="style0">
-                <img class="style1" src="imgs/blue_bar.svg" alt="Blue_Bar" title="Blue Bar" width="624" height="7">
+                <img class="style1" src="imgs/blue_bar.svg" alt="blue_bar" title="Blue Bar" width="624" height="7">
                 <br>
             </p>
 
@@ -228,15 +234,13 @@
         </div>
 
         <!-- Personal Info -->
-        <div id="personal_info" class="Liberation-Serif nLetterSpacing">
-            <p class="style2 darkSlateGray fontSize6 fontSize-30pt">
-                <span id="name">Kristopher Schneider</span>
+        <div id="personal_info" class="nLetterSpacing">
+            <h1 id="name" class="style2 Montserrat normalFontWeight darkSlateGray fontSize6 titleFontSize">
+                Kristopher Schneider
+            </h1>
+            <img id="profile_pic" src="imgs/profile.jpg" width="183" alt="my_profile_pic" title="My Profile Picture">
 
-                <img id="profile_pic" src="imgs/profile.jpg" width="183" alt="my_profile_pic"
-                    title="My Profile Picture">
-            </p>
-
-            <div class="fontSize2 fontSize-11pt">
+            <div class="Liberation-Serif fontSize2 fontSize-11pt">
                 <table id="address" class="style3 dimGray">
                     <tbody>
                         <tr>
@@ -251,6 +255,7 @@
                         <tr>
                             <td><strong>Website</strong></td>
                             <td>
+                                &emsp;
                                 <a href="https://www.linkedin.com/in/kris-schneider-b6715b230/">
                                     www.linkedin.com/in/kris-schneider-b6715b230/
                                 </a>
@@ -282,6 +287,7 @@
                         <tr>
                             <td class="dimGray"><strong>Email</strong></td>
                             <td>
+                                &emsp;
                                 <a class="steelBlue" href="mailto:Kris37Schneider@vivaldi.net">
                                     Kris37Schneider@vivaldi.net
                                 </a>
