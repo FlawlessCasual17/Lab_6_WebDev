@@ -16,7 +16,7 @@
             @import url('fonts/LiberationSerif-Regular.ttf');
             @import url('fonts/SourceSerifPro-900.ttf');
 
-            /* Overridden default CSS elements. */
+            /* Overridden default HTML elements. */
             @page {
                 size: 8.5in 11in
             }
@@ -25,6 +25,11 @@
                 line-height: 115%;
                 margin-bottom: 0.1in;
                 background: transparent
+            }
+
+            table {
+                width: 29%;
+                height: 42pt
             }
 
             /* Custom CSS class elements. */
@@ -214,28 +219,50 @@
 
         <!-- Personal Info -->
         <div id="personal_info" class="Liberation-Serif nLetterSpacing">
-            <p class="style2 darkSlateGray fontSize6 fontSize-30pt">
+            <p id="name" class="style2 darkSlateGray fontSize6 fontSize-30pt">
                 Kristopher Schneider
             </p>
 
             <div class="fontSize2 fontSize-11pt">
-                <p id="address" class="style3 dimGray">
-                    <strong>Address:</strong> 37 Marquis Grove SE
-                </p>
+                <table id="address" class="style3 dimGray">
+                    <tbody>
+                        <tr>
+                            <td><strong>Address</strong></td>
+                            <td>37 Marquis Grove SE</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p id="location" class="style4 dimGray">
-                    <strong>Location:</strong> Calgary, Alberta
-                </p>
-                <br>
+                <table id="location" class="style4 dimGray">
+                    <tbody>
+                        <tr>
+                            <td><strong>Location</strong></td>
+                            <td>Calgary, Alberta</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p id="phone_number" class="style5 dimGray">
-                    <strong>Phone Number:</strong> 403 970 1655
-                </p>
+                <table id="phone_number" class="style5 dimGray">
+                    <tbody>
+                        <tr>
+                            <td><strong>Phone Number</strong></td>
+                            <td>403.970.1655</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p id="email" class="style6">
-                    <strong class="dimGray">Email:</strong>
-                    <u class="steelBlue">Kris37Schneider@vivaldi.net</u>
-                </p>
+                <table id="email" class="style6">
+                    <tbody>
+                        <tr>
+                            <td class="dimGray"><strong>Email</strong></td>
+                            <td>
+                                <a class="steelBlue" href="mailto:Kris37Schneider@vivaldi.net">
+                                    Kris37Schneider@vivaldi.net
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -312,7 +339,7 @@
                 <p class="style13 black Liberation-Serif fontSize2 fontSize-10pt">
                     Finished in August 2022.
                 </p>
-                <br>
+                <br><br>
             </div>
         </div>
     </body>
