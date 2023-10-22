@@ -32,6 +32,16 @@
                 height: 42pt
             }
 
+            /* Custom CSS id elements. */
+            /*
+                Unlike regular id elements,
+                these actually have a function.
+            */
+            #profile_pic {
+                position: absolute;
+                margin-left: 0.97in
+            }
+
             /* Custom CSS class elements. */
             .darkSlateGray {
                 color: #484a5c !important
@@ -221,8 +231,9 @@
         <div id="personal_info" class="Liberation-Serif nLetterSpacing">
             <p class="style2 darkSlateGray fontSize6 fontSize-30pt">
                 <span id="name">Kristopher Schneider</span>
-                <!-- TODO: ADD A PROFILE PICTURE HERE LATER ON... -->
-                <!-- <img src=""> -->
+
+                <img id="profile_pic" src="imgs/profile.jpg" width="183" alt="my_profile_pic"
+                    title="My Profile Picture">
             </p>
 
             <div class="fontSize2 fontSize-11pt">
