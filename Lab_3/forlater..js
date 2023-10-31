@@ -5,14 +5,14 @@ function toggleLightTheme() {
 }
 
 /*
-    * Create a boolean variable check if the user has
-    * a dark theme enabled in their OS.
-    */
+ * Create a boolean variable check if the user has
+ * a dark theme enabled in their OS.
+ */
 const isDarkMode = window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 /*
-    * If the user doesn't have dark mode enabled,
-    * run the function, 'toggleLightTheme'.
-    */
+ * If the user doesn't have dark mode enabled,
+ * run the function, 'toggleLightTheme'.
+ */
 if (!isDarkMode) toggleLightTheme();
