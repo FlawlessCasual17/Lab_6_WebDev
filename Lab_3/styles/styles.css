@@ -4,16 +4,16 @@
 
 /* Page styling. */
 body {
-    padding: 20pt !important;
+    padding: 25px !important;
     background-color: #1a1c23;
     color: #e4e4e4f8
 }
 
-body button {
+header>button {
     position: absolute !important;
     border-radius: 50% !important;
-    margin-left: 87% !important;
-    margin-top: -10% !important;
+    margin-left: 86% !important;
+    margin-top: -35pt !important;
     background-color: #1a1c23;
     border: 1px solid #e4e4e4f8
 }
@@ -23,7 +23,7 @@ body button {
     color: #1a1c23
 }
 
-.lightMode button {
+.lightMode header>button {
     color: #1a1c23;
     background-color: #e4e4e4f8;
     border: 1px solid #1a1c23
