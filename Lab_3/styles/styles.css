@@ -9,7 +9,7 @@ body {
     color: #e4e4e4f8
 }
 
-header>button {
+/* header>button {
     position: absolute !important;
     border-radius: 50% !important;
     margin-left: 86% !important;
@@ -27,7 +27,7 @@ header>button {
     color: #1a1c23;
     background-color: #e4e4e4f8;
     border: 1px solid #1a1c23
-}
+} */
 
 /* Header styling. */
 h1 {
