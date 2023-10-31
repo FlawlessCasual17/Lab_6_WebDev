@@ -1,17 +1,92 @@
+/* Import fonts. */
 @import url('/Lab_3/fonts/Montserrat-Regular.ttf');
 @import url('/Lab_3/fonts/LiberationSerif-Regular.ttf');
 
+/* Page styling. */
+body {
+    padding: 20pt !important;
+    background-color: #1a1c23;
+    color: #e4e4e4f8
+}
+
+body button {
+    position: absolute !important;
+    border-radius: 50% !important;
+    margin-left: 87% !important;
+    margin-top: -10% !important;
+    background-color: #1a1c23;
+    border: 1px solid #e4e4e4f8
+}
+
+.lightMode {
+    background-color: #e4e4e4f8;
+    color: #1a1c23
+}
+
+.lightMode button {
+    color: #1a1c23;
+    background-color: #e4e4e4f8;
+    border: 1px solid #1a1c23
+}
+
 /* Header styling. */
 h1 {
-    font-family: 'Liberation Serif', serif;
-    font-weight: bolder
+    font-family: 'Liberation Serif', serif !important;
+    font-weight: 900px
 }
 
 .story>h2 {
-    font-family: 'Liberation Serif ', serif;
+    font-family: 'Liberation Serif', serif !important
+}
+
+.services>h2 {
+    font-family: 'Liberation Serif', serif !important
+}
+
+.services>section>h3 {
+    font-family: 'Liberation Serif', serif !important;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline
+}
+
+.locations>h2 {
+    font-family: 'Liberation Serif', serif !important
+}
+
+.locations>section>h3 {
+    font-family: 'Liberation Serif', serif !important;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline
 }
 
 /* Body styling. */
 .story>p {
-    font-family: 'Montserrat Regular', sans-serif
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: medium
+}
+
+.services>section>p {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: small
+}
+
+.services>section>ul {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: small
+}
+
+.locations>section>p {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 10.6pt
+}
+
+footer>img {
+    border-radius: 1%;
+}
+
+footer>p {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: small
 }

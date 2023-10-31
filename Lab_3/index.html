@@ -8,8 +8,29 @@
     </head>
 
     <body>
+        <script>
+            // For enabling the website's light theme.
+            function toggleLightTheme() {
+                var ele = document.body;
+                ele.classList.toggle("lightMode");
+            }
+
+            /*
+             * Create a boolean variable check if the user has
+             * a dark theme enabled in their OS.
+             */
+            const isDarkMode = window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            /*
+             * If the user doesn't have dark mode enabled,
+             * run the function, 'toggleLightTheme'.
+             */
+            if (!isDarkMode) toggleLightTheme();
+        </script>
         <header>
             <h1>Lucy's Laundry</h1>
+            <button title="Toggle Dark/Light Theme" type="button" onclick="toggleLightTheme()">☀</button>
         </header>
         <main>
             <section class="story">
@@ -86,8 +107,10 @@
             <img src="images/cat-basket.jpg"
                 alt="A grey cat sits within a white laundry hamper, looking up at the camera">
             <p>
-                <em>"Cat in a Basket"</em> by courtneyp is marked with CC BY-NC-SA 2.0.
-                <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">View Terms</a>.
+                <em>"Cat in a Basket"</em> by <u>courtneyp</u> is marked with <em>CC BY-NC-SA 2.0</em>&emsp;
+                <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">
+                    View Terms
+                </a>
             </p>
             <p>Follow us on <a href="#">Facebook</a>!</p>
         </footer>
