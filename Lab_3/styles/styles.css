@@ -1,5 +1,17 @@
-@import url("/Lab_3/fonts/Montserrat-Regular.ttf");
+@import url('/Lab_3/fonts/Montserrat-Regular.ttf');
+@import url('/Lab_3/fonts/LiberationSerif-Regular.ttf');
 
-* {
-    font-family: Montserrat, sans-serif
+/* Header styling. */
+h1 {
+    font-family: 'Liberation Serif', serif;
+    font-weight: bolder
+}
+
+.story>h2 {
+    font-family: 'Liberation Serif ', serif;
+}
+
+/* Body styling. */
+.story>p {
+    font-family: 'Montserrat Regular', sans-serif
 }
