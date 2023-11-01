@@ -4,96 +4,58 @@
 
 /* Page styling. */
 body {
-    padding: 25px !important;
-    width: 600px !important;
-    margin: 0auto !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+    padding: 25px;
+    width: 600px;
+    margin: 0auto;
     background-color: #1a1c23;
     color: #e4e4e4f8
 }
 
-/* <button title="Toggle Dark/Light Theme" type="button" onclick="toggleLightTheme()">☀</button> */
-
-/*
-header>button {
-    position: absolute !important;
-    border-radius: 50% !important;
-    margin-left: 86% !important;
-    margin-top: -35pt !important;
-    background-color: #1a1c23;
-    border: 1px solid #e4e4e4f8
-}
-
-.lightMode {
-    background-color: #e4e4e4f8;
-    color: #1a1c23
-}
-
-.lightMode header>button {
-    color: #1a1c23;
-    background-color: #e4e4e4f8;
-    border: 1px solid #1a1c23
-}
-*/
-
 /* Header styling. */
 h1 {
+    color: #bababa;
     font-family: 'Liberation Serif', serif !important;
-    font-weight: 900px
+    font-weight: 900px;
+    line-height: 80px
 }
 
-.story>h2 {
+h2 {
     font-family: 'Liberation Serif', serif !important
 }
 
-.services>h2 {
-    font-family: 'Liberation Serif', serif !important
-}
-
-.services>section>h3 {
+h3 {
     font-family: 'Liberation Serif', serif !important;
     font-weight: lighter;
     font-style: italic;
-    text-decoration: underline
-}
-
-.locations>h2 {
-    font-family: 'Liberation Serif', serif !important
-}
-
-.locations>section>h3 {
-    font-family: 'Liberation Serif', serif !important;
-    font-weight: lighter;
-    font-style: italic;
-    text-decoration: underline
+    text-decoration: underline;
+    color: #1577ff !important
 }
 
 /* Body styling. */
 .story>p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium
+    font-size: medium !important
 }
 
-.services>section>p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+p {
     font-size: small
 }
 
-.services>section>ul {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ul {
     font-size: small
 }
 
 .locations>section>p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10.6pt
+    font-size: 10.6pt !important
 }
 
 footer>img {
     border-radius: 1.31%;
-    width: 150px
+    width: 150px !important
 }
 
 footer>p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 8.7pt
+    font-size: 8.7pt !important
 }
