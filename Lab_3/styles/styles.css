@@ -9,7 +9,7 @@ body {
         Geneva, Verdana, sans-serif;
     padding: 25px;
     width: 600px;
-    margin: 0auto;
+    margin: 0 auto;
     background-color: #141517;
     color: #1f7dd5
 }
@@ -24,8 +24,7 @@ header {
 
 h1 {
     color: #bababa !important;
-    font-family: 'Liberation Serif', serif !important;
-    font-weight: 900px
+    font-family: 'Liberation Serif', serif !important
 }
 
 h2 {
