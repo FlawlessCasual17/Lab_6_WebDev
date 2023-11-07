@@ -1,16 +1,19 @@
 /* Insert code here later... */
 .grid-container {
-    display: grid;
-    background-color: DodgerBlue;
-    grid-template-columns: 80px auto 80px;
-    grid-template-rows: 100px 100px;
-    justify-content: center
+    display: flex;
+    background-color: lightblue;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px
 }
 
 .grid-item {
-    background-color: lightblue;
-    border: 1px solid black;
-    padding: 20px;
+    background-color: gray;
+    border: 10px solid lightblue;
+    padding: 5px;
     font-size: 30px;
-    text-align: center
+    text-align: center;
+    height: 50px;
+    flex: 1px
 }
