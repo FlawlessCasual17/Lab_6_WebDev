@@ -1,7 +1,10 @@
 /* Insert code here later... */
 .grid-container {
     display: grid;
-    background-color: DodgerBlue
+    background-color: DodgerBlue;
+    grid-template-columns: 80px auto 80px;
+    grid-template-rows: 100px 100px;
+    justify-content: center
 }
 
 .grid-item {
