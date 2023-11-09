@@ -4,16 +4,31 @@
     background-color: lightblue;
     grid-template-columns: 400px 400px;
     justify-content: center;
+    margin-bottom: 20pt;
     padding: 10px;
     gap: 10px
 }
 
 .grid-item {
-    background-color: gray;
-    color: wheat;
-    padding: 5px;
+    background-color: gray !important;
+    color: white;
+    padding: 5px !important;
     font-size: 30px;
     text-align: center;
     height: 50px;
     flex: 1px
+}
+
+#three_unequal_flexboxes:is(.grid-container) {
+    gap: 12px !important;
+    padding: 12px !important;
+}
+
+#three_unequal_flexboxes>.grid-item {
+    border: 2px solid black;
+    flex: 1 !important
+}
+
+#three_unequal_flexboxes>.grid-item:is(:first-child) {
+    flex: 2 !important
 }
