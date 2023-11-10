@@ -1,4 +1,4 @@
-/* Insert code here later... */
+/* CSS class elements. */
 .grid-container {
     display: flex;
     background-color: lightblue;
@@ -19,9 +19,10 @@
     flex: 1px
 }
 
+/* CSS id elements. */
 #three_unequal_flexboxes:is(.grid-container) {
     gap: 12px !important;
-    padding: 12px !important;
+    padding: 12px !important
 }
 
 #three_unequal_flexboxes>.grid-item {
@@ -31,4 +32,16 @@
 
 #three_unequal_flexboxes>.grid-item:is(:first-child) {
     flex: 2 !important
+}
+
+#four_equally_columns:is(.grid-container) {
+    gap: 12px !important
+}
+
+#four_equally_columns_and_footer * .grid-item {
+    border: 2px solid black
+}
+
+#footer {
+    margin-top: -25pt;
 }
