@@ -3,6 +3,7 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "languageToolLinter.languageTool.disabledCategories": "WHITESPACE_RULE",
     "[css]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.css-language-features"
