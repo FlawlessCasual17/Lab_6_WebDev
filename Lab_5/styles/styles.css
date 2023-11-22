@@ -1,16 +1,18 @@
-/* Universal CSS elements. */
+/* Import fonts. */
 @import url('/Lab_5/fonts/Montserrat-Regular.ttf');
 
+/* Universal CSS elements. */
 * {
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat Regular', sans-serif
 }
 
-/* Overridden native CSS functions. */
+/* Overridden native CSS elements. */
 body :not(.box) {
-    margin-left: 0.1cm
+    margin-left: 0.1cm !important
 }
 
 h3::after {
+    /* A thin horizontal line. */
     content: "";
     display: block;
     border-bottom: 1px solid #c3c3c3;
@@ -22,19 +24,25 @@ h3::after {
 /* CSS class functions. */
 .heading {
     font-weight: normal;
-    margin-top: -14px
+    margin-top: -14px !important
 }
 
 .box {
-    border: 1px solid #000
+    border: 1px solid #000 !important
 }
 
 .horiz-oval {
-    height: 50px;
     width: 105px;
+    height: 55px;
     border: 1px solid #000;
     border-radius: 50%;
-    display: inline-block !important
+    display: flex !important;
+    position: absolute !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -45px !important;
+    left: 0.4cm !important
 }
 
 .dot {
@@ -43,13 +51,13 @@ h3::after {
     border: 1px solid #bbb;
     border-radius: 50%;
     display: inline-block !important;
+    position: relative !important;
     left: 82% !important;
-    position: relative;
-    bottom: 48px
+    bottom: 49px
 }
 
 .dot:last-child {
-    border: 1px solid #00ffff;
+    border: 1px solid #00ffff
 }
 
 /* CSS id functions. */
