@@ -3,13 +3,13 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Home page</title>
+        <title>Contact page</title>
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="box">
         <script>
-            function switchPage() { location.href = './contact.html'; }
+            function switchPage() { location.href = './index.html'; }
         </script>
         <br>
         <header id="top">
@@ -22,22 +22,21 @@
             <div class="horiz-oval">site logo</div>
             <div class="page-name">Page Name</div>
         </div>
-        <div id="buttons">
-            <button type="button">Home</button>
-            <button type="button" onclick="switchPage()">Contact Us</button>
+        <!-- TODO: Reformat these `button` elements, and their CSS id functions.  -->
+        <div id="buttons_2">
+            <button type="button" onclick="switchPage()">Home</button>
+            <button type="button">Contact Us</button>
         </div>
-        <article id="paragraph">
-            <h4>Our Story</h4>
-            <section>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </section>
-            <h4>Our Products</h4>
-            <section>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </section>
-        </article>
+        <form id="infoForm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
         <footer id="bottom">
             <p>
                 Created by XYZ<br>

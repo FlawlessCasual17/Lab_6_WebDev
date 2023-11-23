@@ -29,21 +29,6 @@ h3::after {
     margin-top: 0.1cm
 }
 
-button {
-    color: #000;
-    display: block !important;
-    border: 0px
-}
-
-button:first-child {
-    background-color: #008cff !important;
-    width: 2.31cm !important
-}
-
-button:last-child {
-    background-color: #fff !important;
-}
-
 /* CSS class functions. */
 .box {
     border: 1px solid #000 !important
@@ -85,20 +70,75 @@ button:last-child {
 }
 
 /* CSS id functions. */
-#buttons {
-    background-color: #fff;
+#buttons_1>button,
+#buttons_2>button {
+    color: #000;
+    display: block !important;
+    border: 0px
 }
 
-#buttons>:first-child {
+#buttons_1>:first-child,
+#buttons_2>:first-child {
     display: inline-block !important;
     border: 1px solid #008cff
 }
 
-#buttons>:last-child {
+#buttons_1>button:first-child,
+#buttons_2>button:first-child {
+    width: 2.31cm !important
+}
+
+#buttons_1>button:first-child,
+#buttons_2>button:last-child {
+    background-color: #008cff !important
+}
+
+#buttons_1>button:last-child,
+#buttons_2>button:first-child {
+    background-color: #fff !important
+}
+
+#buttons_1>:last-child {
     border: 1px solid #000
+}
+
+#buttons_2>:last-child {
+    border: 1px solid #008cff
+}
+
+#infoForm {
+    margin-top: 1cm;
+    margin-left: 27%;
+    width: 300px;
+    padding: 15px
+}
+
+#infoForm>label {
+    display: block;
+    margin-bottom: 5px
+}
+
+#infoForm>input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c3c3c3
+}
+
+#infoForm>button[type="submit"] {
+    background-color: #04aa6d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer
+}
+
+#paragraph,
+#bottom {
+    font-size: small
 }
 
 #bottom {
     color: #808080;
-    text-align: center;
+    text-align: center
 }
