@@ -25,8 +25,9 @@ h3::after {
     content: "";
     display: block !important;
     border-bottom: 1px solid #c3c3c3 !important;
-    width: 100% !important;
-    margin-top: 0.1cm
+    width: 102.2% !important;
+    margin-left: -1.2% !important;
+    margin-top: 0.1cm;
 }
 
 button {
@@ -74,6 +75,8 @@ button {
 }
 
 /* CSS id functions. */
+#buttons {}
+
 #bottom {
     color: #808080;
     text-align: center;
