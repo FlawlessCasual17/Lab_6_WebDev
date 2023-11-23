@@ -3,14 +3,47 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Contact page</title>
+        <title>Home page</title>
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="box">
-        <header>
-            <h3 class="heading wide-underline">Contact page</h3>
+        <script>
+            function switchPage() { location.href = './contact.html'; }
+        </script>
+        <br>
+        <header id="top">
+            <h3>Home page</h3>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </header>
+        <div id="logo_and_name">
+            <div class="horiz-oval">site logo</div>
+            <div class="page-name">Page Name</div>
+        </div>
+        <div id="buttons">
+            <button type="button">Home</button>
+            <button type="button" onclick="switchPage()">Contact Us</button>
+        </div>
+        <article id="paragraph">
+            <h4>Our Story</h4>
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+            </section>
+            <h4>Our Products</h4>
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+            </section>
+        </article>
+        <footer id="bottom">
+            <p>
+                Created by XYZ<br>
+                Follow us on [social media]
+            </p>
+        </footer>
     </body>
 
 </html>
