@@ -3,7 +3,7 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "languageToolLinter.languageTool.disabledRules": "WHITESPACE_RULE,MORFOLOGIK_RULE_EN_CA",
+    "languageToolLinter.languageTool.disabledRules": "WHITESPACE_RULE,MORFOLOGIK_RULE_EN_CA,COMMA_PARENTHESIS_WHITESPACE",
     "[css]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.css-language-features"
