@@ -25,13 +25,17 @@ h3::after {
     content: "";
     display: block !important;
     border-bottom: 1px solid #c3c3c3 !important;
-    width: 102.2% !important;
-    margin-left: -1.2% !important;
+    width: 100% !important;
     margin-top: 0.1cm;
 }
 
 button {
-    border-radius: 0% !important;
+    display: block;
+    border-radius: 0% !important
+}
+
+button:first-child {
+    left: 1.5%
 }
 
 /* CSS class functions. */
@@ -75,7 +79,6 @@ button {
 }
 
 /* CSS id functions. */
-#buttons {}
 
 #bottom {
     color: #808080;
