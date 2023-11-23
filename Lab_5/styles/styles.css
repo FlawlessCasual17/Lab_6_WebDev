@@ -8,56 +8,73 @@
 
 /* Overridden native CSS elements. */
 body :not(.box) {
-    margin-left: 0.1cm !important
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+    position: relative !important
+}
+
+h3 {
+    font-weight: normal;
+    color: #808080;
+    margin-top: -14px
 }
 
 h3::after {
+    /* TODO: FIX THIS Horizontal line bullshit. */
     /* A thin horizontal line. */
     content: "";
-    display: block;
-    border-bottom: 1px solid #c3c3c3;
-    width: 101.13%;
-    margin-left: -0.2cm;
+    display: block !important;
+    border-bottom: 1px solid #c3c3c3 !important;
+    width: 100% !important;
     margin-top: 0.1cm
 }
 
-/* CSS class functions. */
-.heading {
-    font-weight: normal;
-    margin-top: -14px !important
+button {
+    border-radius: 0% !important;
 }
 
+/* CSS class functions. */
 .box {
     border: 1px solid #000 !important
 }
 
 .horiz-oval {
-    width: 105px;
-    height: 55px;
-    border: 1px solid #000;
+    width: 97px;
+    height: 45.9px;
+    border: 1px solid #000 !important;
     border-radius: 50%;
     display: flex !important;
     position: absolute !important;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: -45px !important;
-    left: 0.4cm !important
+    /* text-align: center; */
+    font-size: 9pt !important;
+    margin-top: -40px;
+    left: 0.08cm
 }
 
 .dot {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #bbb;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #000;
     border-radius: 50%;
-    display: inline-block !important;
-    position: relative !important;
-    left: 82% !important;
+    display: inline-block;
+    margin-inline: 1.4px !important;
+    left: 82%;
     bottom: 49px
 }
 
 .dot:last-child {
-    border: 1px solid #00ffff
+    border-color: #00ffff !important
+}
+
+.page-name {
+    left: 3cm;
+    bottom: 0.9cm
 }
 
 /* CSS id functions. */
+#bottom {
+    color: #808080;
+    text-align: center;
+}
