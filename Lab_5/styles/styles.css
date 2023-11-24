@@ -9,8 +9,7 @@
 /* Overridden native CSS elements. */
 body {
     width: 529px !important;
-    height: 402px;
-    margin-top: 0 auto;
+    height: 402px
 }
 
 body :not(.box) {
@@ -75,12 +74,19 @@ h3::after {
     bottom: 0.7cm
 }
 
+/* CSS class & id functions. */
+.paragraph,
+#input_form,
+#bottom {
+    font-size: 9pt
+}
+
 /* CSS id functions. */
 #buttons_1>button,
 #buttons_2>button {
     color: #000;
     display: block !important;
-    border: 0px
+    border: 0
 }
 
 #buttons_1>:first-child,
@@ -154,12 +160,6 @@ h3::after {
     cursor: pointer;
     top: 0.5cm;
     left: 23.3%
-}
-
-#paragraph,
-#input_form,
-#bottom {
-    font-size: 9pt
 }
 
 #bottom {
