@@ -7,6 +7,12 @@
 }
 
 /* Overridden native CSS elements. */
+body {
+    width: 529px !important;
+    height: 402px;
+    margin-top: 0 auto;
+}
+
 body :not(.box) {
     margin-left: 0.1cm;
     margin-right: 0.1cm;
@@ -20,12 +26,12 @@ h3 {
 }
 
 h3::after {
-    /* TODO: FIX THIS Horizontal line bullshit. */
     /* A thin horizontal line. */
     content: "";
     display: block !important;
     border-bottom: 1px solid #c3c3c3 !important;
-    width: 100% !important;
+    width: 103.2% !important;
+    margin-left: -1.6%;
     margin-top: 0.1cm
 }
 
@@ -35,8 +41,8 @@ h3::after {
 }
 
 .horzOval {
-    width: 97px;
-    height: 45.9px;
+    width: 68.4px;
+    height: 32px;
     border: 1px solid #000 !important;
     border-radius: 50%;
     display: flex !important;
@@ -65,8 +71,8 @@ h3::after {
 }
 
 .pageName {
-    left: 3cm;
-    bottom: 0.9cm
+    left: 2.1cm;
+    bottom: 0.7cm
 }
 
 /* CSS id functions. */
@@ -83,62 +89,82 @@ h3::after {
     border: 1px solid #008cff
 }
 
-#buttons_1>button:first-child,
-#buttons_2>button:first-child {
-    width: 2.31cm !important
+#buttons_1>button,
+#buttons_2>button {
+    width: 3cm !important
 }
 
-#buttons_1>button:first-child,
-#buttons_2>button:last-child {
-    background-color: #008cff !important
+#buttons_1>button:first-child {
+    background-color: #008cff
+}
+
+#buttons_2>button:first-child {
+    border-color: #1ba0e1
 }
 
 #buttons_1>button:last-child,
 #buttons_2>button:first-child {
-    background-color: #fff !important
+    background-color: #fff
 }
 
 #buttons_1>:last-child {
     border: 1px solid #000
 }
 
-#buttons_2>:last-child {
-    border: 1px solid #008cff
+#buttons_2>:last-child,
+#buttons_2>button:last-child {
+    border: 1px solid #1ba0e1;
+    background-color: #1ba0e1
 }
 
-#form {
-    margin-top: 1cm;
-    margin-left: 27%;
-    width: 300px;
-    padding: 15px
+#input_form {
+    margin-left: 21% !important;
+    width: 300px
 }
 
-#form>label {
-    display: block;
-    margin-bottom: 5px
+#input_form>label {
+    display: block !important;
+    margin-bottom: -19px;
+    text-align: right;
+    right: 5.3cm;
+    top: 0.48cm
 }
 
-#form>input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #c3c3c3
+#input_form>input[type="text"] {
+    left: 2.69cm;
+    /* width: 60%; */
+    padding: 8.9px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000
 }
 
-#form>button[type="submit"] {
-    background-color: #04aa6d;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer
+#input_form>input[type="text"]:last-of-type {
+    padding-top: 18.2px !important
+}
+
+
+#input_form>button[type="submit"] {
+    font-size: smaller !important;
+    background-color: #e6e6e6 !important;
+    color: #000;
+    padding: 5px 45.8px 5px;
+    border: 1px solid #b2b2b4;
+    border-radius: 5.9%;
+    cursor: pointer;
+    top: 0.5cm;
+    left: 23.3%
 }
 
 #paragraph,
+#input_form,
 #bottom {
-    font-size: small
+    font-size: 9pt
 }
 
 #bottom {
     color: #808080;
-    text-align: center
+    text-align: center;
+    display: block;
+    bottom: -27px;
 }
