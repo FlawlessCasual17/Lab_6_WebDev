@@ -112,7 +112,7 @@ header :is(a) {
 img {
     height: 30px;
     width: 30px;
-    margin: 10px
+    padding: 10px
         /* padding: 10px */
 }
 
@@ -121,9 +121,15 @@ header :is(a) {
     line-height: 50px
 }
 
+a {
+    padding: 15px
+        /* margin: 15px */
+}
 
-
-
+footer {
+    text-align: center;
+    padding: 15px
+}
 
 /****************** home page styling ******************/
 
