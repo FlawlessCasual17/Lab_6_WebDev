@@ -139,13 +139,17 @@ footer {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+/* Custom CSS classes. */
+.italics {
+    font-style: italic
+}
 
-
-
-
-
-
-
+/* Overridden native CSS elements. */
+article {
+    background-color: #d3d3d3;
+    padding: 15px;
+    margin: 15px
+}
 
 /****************** profile page styling ******************/
 
@@ -160,11 +164,38 @@ footer {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+/* Custom CSS classes. */
+.wide-column {
+    width: 420px
+}
 
+.narrow-column {
+    width: 180px
+}
 
+.wide-column>div:is(.flex) img[alt="smiling woman"] {
+    /* For modifying the employee's profile picture. */
+    width: 120px;
+    height: auto
+}
 
+.labels {
+    font-weight: bold;
+    width: 70px;
+    text-align: right
+}
 
+.light-background {
+    background-color: #d3d3d3;
+    height: 140px;
+    transform: translateY(30px)
+}
 
+.light-background>h2 {
+    margin-top: 10px;
+    /* Add 15px of space to both left and below. */
+    padding: 0 15px 0 15px
+}
 
 /****************** form styling ******************/
 
@@ -181,3 +212,7 @@ footer {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+/* Overridden native CSS elements. */
+form {
+    padding: 45px 45px
+}
