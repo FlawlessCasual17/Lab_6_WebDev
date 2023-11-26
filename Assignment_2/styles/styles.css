@@ -11,29 +11,29 @@ The instructions describe the missing styling and layout that is needed; you wil
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .fixed-width {
     width: 600px;
-    margin: 0 auto;
-    /* centers content on the screen */
+    margin: 0 auto
+        /* centers content on the screen */
 }
 
 .hidden {
-    display: none;
-    /* hides elements that are needed for DOM */
+    display: none
+        /* hides elements that are needed for DOM */
 }
 
 .flex {
-    display: flex;
+    display: flex
 }
 
 /****************** typography ******************/
 
 h1,
 h2 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif
 }
 
 /***  INSTRUCTIONS:
