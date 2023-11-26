@@ -48,15 +48,36 @@ h2 {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+/* Overridden native CSS elements. */
+h1 {
+    font-size: 32px
+}
 
+h2 {
+    font-size: 24px
+}
 
+h3 {
+    font-size: 18px;
+    font-weight: bold
+}
 
+footer {
+    font-size: 12px
+}
 
+a:not(:hover) {
+    text-decoration: none
+}
 
+header :is(a) {
+    color: #000
+}
 
-
-
-
+h2,
+p {
+    margin-bottom: 15px
+}
 
 /****************** site-wide styling ******************/
 
@@ -73,10 +94,32 @@ h2 {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
+/* Overridden native CSS elements. */
+header,
+footer {
+    color: #c74365
+}
 
+header,
+main {
+    margin-bottom: 30px
+}
 
+header :is(a) {
+    font-size: 18px
+}
 
+img {
+    height: 30px;
+    width: 30px;
+    margin: 10px
+        /* padding: 10px */
+}
 
+header>h1,
+header :is(a) {
+    line-height: 50px
+}
 
 
 
