@@ -70,7 +70,7 @@ a:not(:hover) {
     text-decoration: none
 }
 
-header :is(a) {
+a {
     color: #000
 }
 
@@ -97,7 +97,7 @@ p {
 /* Overridden native CSS elements. */
 header,
 footer {
-    color: #c74365
+    background-color: #c74365
 }
 
 header,
@@ -105,30 +105,43 @@ main {
     margin-bottom: 30px
 }
 
-header :is(a) {
-    font-size: 18px
+header a {
+    font-size: 18px;
+    /* top | right | bottom | left */
+    padding: 0 15px 0 15px
 }
 
 img {
     height: 30px;
     width: 30px;
-    padding: 10px
-        /* padding: 10px */
+    margin: 10px
 }
 
 header>h1,
-header :is(a) {
+header a {
     line-height: 50px
-}
-
-a {
-    padding: 15px
-        /* margin: 15px */
 }
 
 footer {
     text-align: center;
     padding: 15px
+}
+
+h1 {
+    margin-top: 10px
+}
+
+/* Custom CSS classes. */
+.fixed-width.flex li>a {
+    margin-left: 242%
+}
+
+.fixed-width.flex li:is(:last-child) {
+    margin-left: -97px !important
+}
+
+.fixed-width.flex li:not(:first-child) {
+    margin-left: -22px
 }
 
 /****************** home page styling ******************/
@@ -176,13 +189,18 @@ article {
 .wide-column>div:is(.flex) img[alt="smiling woman"] {
     /* For modifying the employee's profile picture. */
     width: 120px;
-    height: auto
+    height: auto;
+    margin-top: auto
 }
 
 .labels {
     font-weight: bold;
     width: 70px;
     text-align: right
+}
+
+.labels+div>p {
+    margin-left: 11%
 }
 
 .light-background {
