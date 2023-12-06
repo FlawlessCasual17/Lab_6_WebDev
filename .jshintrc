@@ -1,0 +1,19 @@
+{
+    "curly": false,
+    "eqeqeq": true,
+    "immed": false,
+    "latedef": true,
+    "noarg": false,
+    "undef": false,
+    "unused": true,
+    "boss": true,
+    "eqnull": false,
+    "asi": true,
+    "bitwise": true,
+    "camelcase": true,
+    "withstmt": true,
+    "moz": false,
+    "node": false,
+    "supernew": true,
+    "esversion": 6
+}
