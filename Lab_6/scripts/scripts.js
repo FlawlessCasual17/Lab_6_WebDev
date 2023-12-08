@@ -6,6 +6,10 @@
 /****************** create variables ******************/
 /* create variables to hold the values for modelName and duration */
 // INSERT YOUR CODE HERE
+
+/**
+ * Creates two variables for holding two values.
+ */
 let modelName = '', duration = 0
 
 
@@ -20,6 +24,10 @@ let modelName = '', duration = 0
  */
 
 // INSERT YOUR CODE HERE
+
+/**
+ * Calculates the cost span element.
+ */
 function Recalculate() {
     // A variable that holds an HTMLElement value.
     let costLabel = document
@@ -28,16 +36,16 @@ function Recalculate() {
 
     switch (modelName) { // @formatter:off
         /*
-            Set the value of `newTotalCost` to 100
-            times the duration when `modelName`
-            equals 'XYZ'
+            Set the value of 'newTotalCost' to 100
+            times the duration when 'modelName'
+            equals "XYZ".
          */
         case 'XYZ':
             newTotalCost = duration * 100; break
         /*
-            Set the value of `newTotalCost` to 213
-            times the duration when `modelName`
-            equals 'CRPG'
+            Set the value of 'newTotalCost' to 100
+            times the duration when 'modelName'
+            equals "CPRG"
          */
         case 'CRPG':
             newTotalCost = duration * 213; break
@@ -68,10 +76,18 @@ function Recalculate() {
  */
 // @formatter:on
 // INSERT YOUR CODE HERE
-let modelButton = document.getElementById("switchButton")
 
-modelName = 'XYZ'
+/**
+ * Represents the 'Switch Model' pseudo-button.
+ */
+let modelButton = document
+    .getElementById("switchButton")
 
+modelName = 'XYZ' // Set 'modelName' to "XYZ".
+
+/**
+ * Changes the model of the pseudo-button.
+ */
 function ChangeModel() {
     let modelText = document.getElementById("model-text")
 
@@ -81,7 +97,7 @@ function ChangeModel() {
             modelText.innerHTML = 'Model CPRG'
             break
         case 'CPRG':
-            modelName = 'XYZ';
+            modelName = 'XYZ'
             modelText.innerHTML = 'Model XYZ'
             break
     } // @formatter:on
@@ -89,6 +105,7 @@ function ChangeModel() {
     Recalculate() // Recalculating the total cost.
 }
 
+// Runs automatically whenever the pseudo-button is clicked.
 modelButton.addEventListener("click", ChangeModel)
 
 
