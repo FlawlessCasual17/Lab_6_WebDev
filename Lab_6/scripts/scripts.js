@@ -82,7 +82,7 @@ function Recalculate() {
  * Represents the 'Switch Model' pseudo-button.
  */
 let modelButton = document
-    .getElementById("switchButton");
+    .getElementById("model-button");
 
 modelName = 'XYZ'; // Set 'modelName' to "XYZ".
 
@@ -164,4 +164,4 @@ function changeDuration() {
     Recalculate(); // Recalculates the total cost.
 }
 
-changeDurationButton.addEventListener("click", changeDuration);
+changeDurationButton.addEventListener('click', changeDuration);
