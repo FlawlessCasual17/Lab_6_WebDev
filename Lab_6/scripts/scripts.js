@@ -11,7 +11,7 @@
  * Creates two variables for holding
  * the values of a model name, and duration.
  */
-let modelName = '', duration = 0;
+let ModelName, Duration;
 
 
 /****************** helper function ******************/
@@ -35,21 +35,21 @@ function Recalculate() {
         .getElementById("calculated-cost");
     let newTotalCost; // Represents the NEW total cost.
 
-    switch (modelName) { // @formatter:off
+    switch (ModelName) { // @formatter:off
         /*
             Set the value of 'newTotalCost' to 100
             times the duration when 'modelName'
             equals "XYZ".
          */
         case 'XYZ':
-            newTotalCost = duration * 100; break;
+            newTotalCost = Duration * 100; break;
         /*
             Set the value of 'newTotalCost' to 100
             times the duration when 'modelName'
             equals "CPRG"
          */
         case 'CRPG':
-            newTotalCost = duration * 213; break;
+            newTotalCost = Duration * 213; break;
     } // @formatter:on
 
     // Sets `HTMLElement.innerHTML` to the NEW total cost.
@@ -81,10 +81,10 @@ function Recalculate() {
 /**
  * Represents the 'Switch Model' pseudo-button.
  */
-let modelButton = document
+let ModelButton = document
     .getElementById("model-button");
 
-modelName = 'XYZ'; // Set 'modelName' to "XYZ".
+ModelName = 'XYZ'; // Set 'modelName' to "XYZ".
 
 /**
  * Changes the model of the pseudo-button.
@@ -94,14 +94,14 @@ function ChangeModel() {
     let modelText = document
         .getElementById("model-text");
 
-    switch (modelName) { // @formatter:off
+    switch (ModelName) { // @formatter:off
         /*
             When 'modelName' is equal to "XYZ":
             Sets 'modelName' to "CPRG".
             Sets 'modelText.innerHTML' to "Model CPRG".
          */
         case 'XYZ':
-            modelName = 'CPRG';
+            ModelName = 'CPRG';
             modelText.innerHTML = 'Model CPRG';
             break;
         /*
@@ -110,7 +110,7 @@ function ChangeModel() {
             Sets 'modelText.innerHTML' to "Model XYZ".
          */
         case 'CPRG':
-            modelName = 'XYZ';
+            ModelName = 'XYZ';
             modelText.innerHTML = 'Model XYZ';
             break;
     } // @formatter:on
@@ -119,7 +119,7 @@ function ChangeModel() {
 }
 
 // Runs automatically whenever the pseudo-button is clicked.
-modelButton.addEventListener("click", ChangeModel);
+ModelButton.addEventListener("click", ChangeModel);
 
 
 /****************** duration button logic ******************/
@@ -143,7 +143,7 @@ modelButton.addEventListener("click", ChangeModel);
 /**
  * Represents the 'Change Duration' pseudo-button.
  */
-let changeDurationButton = document
+let ChangeDurationButton = document
     .getElementById("duration-button");
 
 /**
@@ -151,7 +151,7 @@ let changeDurationButton = document
  * 'duration' variable to a
  * user-inputted one.
  */
-function changeDuration() {
+function ChangeDuration() {
     // Represents the duration-text span element.
     let durationText = document
         .getElementById("duration-text");
@@ -164,4 +164,5 @@ function changeDuration() {
     Recalculate(); // Recalculates the total cost.
 }
 
-changeDurationButton.addEventListener('click', changeDuration);
+// Runs whenever the button is clicked.
+ChangeDurationButton.addEventListener('click', ChangeDuration);
