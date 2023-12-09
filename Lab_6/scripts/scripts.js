@@ -8,7 +8,8 @@
 // INSERT YOUR CODE HERE
 
 /**
- * Creates two variables for holding two values.
+ * Creates two variables for holding
+ * the values of a model name, and duration.
  */
 let modelName = '', duration = 0
 
@@ -29,7 +30,7 @@ let modelName = '', duration = 0
  * Calculates the cost span element.
  */
 function Recalculate() {
-    // A variable that holds an HTMLElement value.
+    // Represents the cost label.
     let costLabel = document
         .getElementById("calculated-cost")
     let newTotalCost // Represents the NEW total cost.
@@ -89,13 +90,25 @@ modelName = 'XYZ' // Set 'modelName' to "XYZ".
  * Changes the model of the pseudo-button.
  */
 function ChangeModel() {
-    let modelText = document.getElementById("model-text")
+    // Represents the model's text.
+    let modelText = document
+        .getElementById("model-text")
 
     switch (modelName) { // @formatter:off
+        /*
+            When 'modelName' is equal to "XYZ":
+            Sets 'modelName' to "CPRG".
+            Sets 'modelText.innerHTML' to "Model CPRG".
+         */
         case 'XYZ':
             modelName = 'CPRG'
             modelText.innerHTML = 'Model CPRG'
             break
+        /*
+            When 'modelName' is equal to "CPRG":
+            Sets 'modelName' to "XYZ".
+            Sets 'modelText.innerHTML' to "Model XYZ".
+         */
         case 'CPRG':
             modelName = 'XYZ'
             modelText.innerHTML = 'Model XYZ'
@@ -126,3 +139,28 @@ modelButton.addEventListener("click", ChangeModel)
 // @formatter:on
 
 // INSERT YOUR CODE HERE
+
+/**
+ * Represents the 'Change Duration' pseudo-button.
+ */
+let changeDurationButton = document
+    .getElementById("duration-button")
+
+/**
+ * Changes the value of the
+ * 'duration' variable to a
+ * user-inputted one.
+ */
+function changeDuration() {
+    // Represents the duration-text span element.
+    let durationText = document
+        .getElementById("duration-text")
+    // Prompts the user for a new duration.
+    let newDuration = prompt(
+        "Enter the new duration: ")
+
+    // Sets 'durationText.innerHTML' to the new duration.
+    durationText.innerHTML = newDuration
+
+    Recalculate() // Recalculates the total cost.
+}
